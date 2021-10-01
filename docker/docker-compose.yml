@@ -20,7 +20,7 @@ services:
   # - TEST_MSSQL_JDBC_URI=sqlserver://mssql:1433;database=master;user=SA;password=Pr1sm4_Pr1sm4;trustServerCertificate=true;
 
   postgres:
-    image: postgres:10
+    image: postgres:14
     restart: always
     environment:
       - POSTGRES_DB=tests
@@ -32,7 +32,7 @@ services:
       - '5432:5432'
 
   postgres_isolated:
-    image: postgres:10
+    image: postgres:14
     restart: always
     environment:
       - POSTGRES_DB=tests
